@@ -1,0 +1,297 @@
+/* ElevenLabs Font System */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+/* Waldenburg Font with fallback */
+@font-face {
+  font-family: 'Waldenburg';
+  src: url('https://fonts.cdnfonts.com/s/95883/Waldenburg.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Waldenburg';
+  src: url('https://fonts.cdnfonts.com/s/95883/Waldenburg-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Waldenburg HT';
+  src: url('https://fonts.cdnfonts.com/s/95883/WaldenburgHT.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Font Families */
+  --font-waldenburg: 'Waldenburg', 'Georgia', 'Times New Roman', serif;
+  --font-waldenburg-ht: 'Waldenburg HT', 'Waldenburg', 'Georgia', 'Times New Roman', serif;
+  --font-jetbrains-mono: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
+  --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* Color Variables */
+  --black: #000;
+  --white-50: #ffffff;
+  --neutral-50: #F2F2F2;
+  --neutral-100: #E5E5E5;
+  --neutral-200: #DCDCDC;
+  --neutral-300: #CCCCCC;
+  --neutral-400: #999999;
+  --neutral-500: #666666;
+  --neutral-600: #4D4D4D;
+  --neutral-700: #333333;
+  --neutral-800: #1A1A1A;
+  --neutral-900: #0D0D0D;
+  
+  /* Display Typography */
+  --f-display-01-font-family: var(--font-waldenburg-ht);
+  --f-display-01-font-weight: 700;
+  --f-display-01-font-size: 3rem;
+  --f-display-01-line-height: 100%;
+  
+  --f-display-02-font-family: var(--font-waldenburg-ht);
+  --f-display-02-font-weight: 700;
+  --f-display-02-font-size: 2.5rem;
+  --f-display-02-line-height: 100%;
+  
+  /* Heading Typography */
+  --f-heading-01-font-family: var(--font-waldenburg);
+  --f-heading-01-font-weight: 400;
+  --f-heading-01-font-size: 2.25rem;
+  --f-heading-01-line-height: 105%;
+  --f-heading-01-letter-spacing: -0.03em;
+  
+  --f-heading-02-font-family: var(--font-waldenburg);
+  --f-heading-02-font-weight: 400;
+  --f-heading-02-font-size: 2rem;
+  --f-heading-02-line-height: 110%;
+  --f-heading-02-letter-spacing: -0.03em;
+  
+  --f-heading-03-font-family: var(--font-waldenburg);
+  --f-heading-03-font-weight: 400;
+  --f-heading-03-font-size: 1.75rem;
+  --f-heading-03-line-height: 120%;
+  --f-heading-03-letter-spacing: -0.02em;
+  
+  /* Body & UI Typography */
+  --f-ui-03-font-family: var(--font-inter);
+  --f-ui-03-font-weight: 700;
+  --f-ui-03-font-size: 0.875rem;
+  --f-ui-03-line-height: 1.25rem;
+  --f-ui-03-letter-spacing: 0.025em;
+  --f-ui-03-text-transform: uppercase;
+  
+  --f-body-01-font-family: var(--font-inter);
+  --f-body-01-font-weight: 400;
+  --f-body-01-font-size: 1.125rem;
+  --f-body-01-line-height: 160%;
+  --f-body-01-letter-spacing: 0em;
+  
+  --f-paragraph-01-font-family: var(--font-waldenburg);
+  --f-paragraph-01-font-weight: 400;
+  --f-paragraph-01-font-size: 1.125rem;
+  --f-paragraph-01-line-height: 140%;
+  --f-paragraph-01-letter-spacing: 0em;
+}
+
+/* Button Styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 6.25rem;
+  height: 2.5rem;
+  padding: 0 1rem;
+  background-color: var(--black);
+  color: var(--white-50);
+  border-radius: 9999px;
+  font-family: var(--f-ui-03-font-family);
+  font-weight: var(--f-ui-03-font-weight);
+  font-size: var(--f-ui-03-font-size);
+  line-height: var(--f-ui-03-line-height);
+  letter-spacing: var(--f-ui-03-letter-spacing);
+  text-transform: var(--f-ui-03-text-transform);
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s cubic-bezier(.31,.325,0,.92);
+  outline: 2px solid transparent;
+}
+
+.btn-primary:hover {
+  background-color: var(--neutral-800);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 6.25rem;
+  height: 2.5rem;
+  padding: 0 1rem;
+  background-color: var(--neutral-50);
+  color: var(--black);
+  border-radius: 9999px;
+  font-family: var(--f-ui-03-font-family);
+  font-weight: var(--f-ui-03-font-weight);
+  font-size: var(--f-ui-03-font-size);
+  line-height: var(--f-ui-03-line-height);
+  letter-spacing: var(--f-ui-03-letter-spacing);
+  text-transform: var(--f-ui-03-text-transform);
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s cubic-bezier(.31,.325,0,.92);
+  outline: 2px solid transparent;
+}
+
+.btn-secondary:hover {
+  background-color: var(--neutral-100);
+  transform: translateY(-1px);
+}
+
+/* Typography Classes */
+.f-display-01 {
+  font-family: var(--f-display-01-font-family);
+  font-weight: var(--f-display-01-font-weight);
+  font-size: var(--f-display-01-font-size);
+  line-height: var(--f-display-01-line-height);
+}
+
+.f-display-02 {
+  font-family: var(--f-display-02-font-family);
+  font-weight: var(--f-display-02-font-weight);
+  font-size: var(--f-display-02-font-size);
+  line-height: var(--f-display-02-line-height);
+}
+
+.f-heading-01 {
+  font-family: var(--f-heading-01-font-family);
+  font-weight: var(--f-heading-01-font-weight);
+  font-size: var(--f-heading-01-font-size);
+  line-height: var(--f-heading-01-line-height);
+  letter-spacing: var(--f-heading-01-letter-spacing);
+}
+
+.f-heading-02 {
+  font-family: var(--f-heading-02-font-family);
+  font-weight: var(--f-heading-02-font-weight);
+  font-size: var(--f-heading-02-font-size);
+  line-height: var(--f-heading-02-line-height);
+  letter-spacing: var(--f-heading-02-letter-spacing);
+}
+
+.f-heading-03 {
+  font-family: var(--f-heading-03-font-family);
+  font-weight: var(--f-heading-03-font-weight);
+  font-size: var(--f-heading-03-font-size);
+  line-height: var(--f-heading-03-line-height);
+  letter-spacing: var(--f-heading-03-letter-spacing);
+}
+
+.f-paragraph-01 {
+  font-family: var(--f-paragraph-01-font-family);
+  font-weight: var(--f-paragraph-01-font-weight);
+  font-size: var(--f-paragraph-01-font-size);
+  line-height: var(--f-paragraph-01-line-height);
+  letter-spacing: var(--f-paragraph-01-letter-spacing);
+}
+
+.f-body-01 {
+  font-family: var(--f-body-01-font-family);
+  font-weight: var(--f-body-01-font-weight);
+  font-size: var(--f-body-01-font-size);
+  line-height: var(--f-body-01-line-height);
+  letter-spacing: var(--f-body-01-letter-spacing);
+}
+
+.f-ui-03 {
+  font-family: var(--f-ui-03-font-family);
+  font-weight: var(--f-ui-03-font-weight);
+  font-size: var(--f-ui-03-font-size);
+  line-height: var(--f-ui-03-line-height);
+  letter-spacing: var(--f-ui-03-letter-spacing);
+  text-transform: var(--f-ui-03-text-transform);
+}
+
+/* Navigation Link Styles */
+.nav-link {
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  color: var(--neutral-700);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--black);
+}
+
+/* Tab Styles */
+.tab-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.tab-button-active {
+  background-color: var(--black);
+  color: var(--white-50);
+}
+
+.tab-button-inactive {
+  background-color: var(--neutral-100);
+  color: var(--neutral-600);
+}
+
+.tab-button-inactive:hover {
+  background-color: var(--neutral-200);
+  color: var(--neutral-700);
+}
+
+/* Voice Chip Styles */
+.voice-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-family: var(--font-inter);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.voice-chip-title {
+  font-weight: 600;
+  color: inherit;
+}
+
+.voice-chip-description {
+  font-weight: 400;
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.voice-chip-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}

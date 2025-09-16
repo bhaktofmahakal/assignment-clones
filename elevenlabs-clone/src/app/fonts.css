@@ -1,0 +1,14 @@
+/* Waldenburg font with fallback */
+@font-face {
+  font-family: 'Waldenburg Regular Fallback';
+  src: local('Inter'), local('Arial'), local('Helvetica'), local('system-ui');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Use Inter as Waldenburg since the original font file is not available */
+.waldenburg-font, 
+[style*="Waldenburg"] {
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif !important;
+}
