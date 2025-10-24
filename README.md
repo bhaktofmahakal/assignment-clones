@@ -3,7 +3,7 @@
 
 A high-fidelity clone of the ElevenLabs Text-to-Speech platform built with Next.js, featuring audio playback functionality and MongoDB integration.
 
-### live Links
+### Live Links
 ### https://cursorcom-website-clone-17612950779.vercel.app/
 ### https://ai-website-clone-1761067857895.vercel.app/
 ### https://elevenlabs-clone-gilt.vercel.app/
