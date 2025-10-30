@@ -6,7 +6,7 @@ A high-fidelity clone of the ElevenLabs Text-to-Speech platform built with Next.
 ### Live Links
 ### [Cursor](https://cursorcom-website-clone-17612950779.vercel.app/)
 ### [Grok](https://ai-website-clone-1761067857895.vercel.app/)
-### [Elevelabs](https://elevenlabs-clone-gilt.vercel.app/)
+### [Elevenlabs](https://elevenlabs-clone-gilt.vercel.app/)
 ### [VectorShift](https://vectorshift-clone-frontend.vercel.app/)
 
 ## Features
